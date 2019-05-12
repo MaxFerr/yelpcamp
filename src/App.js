@@ -209,7 +209,7 @@ class App extends Component {
 			<div className="App">
 				<TopNavBar onClickLogout={this.onClickLogout} isLoggedIn={this.state.isLoggedIn} user={this.state.user} onBtnPressAdd={this.onBtnPressAdd} />
 				<Title onBtnPressAdd={this.onBtnPressAdd}/>				
-				<div style={{position: this.state.scrolling ? 'fixed' : 'relative', top: 0, width: '100vw', zIndex: 1,backgroundColor:'#F1E4E4',marginTop:'-10px'}}>
+				<div style={{position: this.state.scrolling ? 'fixed' : 'relative', top: 0, width: '100%', zIndex: 1,backgroundColor:'#F1E4E4',marginTop:'-10px'}}>
 					<MainNavBar onBtnPress={this.onBtnPress} btnList={this.state.btnName} searchChange={this.searchChange} />
 				</div>
 					<Route path="/" exact render={(props)=><CampList isAdminIn={this.state.isAdminIn}  onBtnPressInfo={this.onBtnPressInfo} campsData={filteredInfo} onDeleteCamp={this.onDeleteCamp} />}/>
