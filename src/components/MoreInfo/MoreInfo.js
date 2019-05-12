@@ -160,8 +160,8 @@ class MoreInfo extends React.Component{
 						<p><em>{this.state.singleCamp.price}$/night</em></p>
 						<p>Camp added : <Moment format="D MMM YYYY" withTitle>{this.state.singleCamp.added}</Moment></p>
 					</div>					
-						<div style={{height:'225px'}}>
-							<MapContainer  camps_name={this.state.name}/>
+						<div id='test'>
+							<MapContainer id='test2' camps_name={this.state.name}/>
 						</div>
 						
 					<div style={{marginTop: '10px'}}

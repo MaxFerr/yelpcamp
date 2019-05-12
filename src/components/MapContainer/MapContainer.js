@@ -30,7 +30,7 @@ export class MapContainer extends Component {
   render() {
     return (
       <Map google={this.props.google}
-          style={{maxWidth: '1000px',height: '200px'}}
+          style={{width:'510px',height: '200px'}}
           center={{
             lat: Number(this.state.lat),
             lng: Number(this.state.lng)
