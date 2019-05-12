@@ -1,0 +1,7 @@
+.unstyled-button {
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.unstyled-button:focus { outline: none; }

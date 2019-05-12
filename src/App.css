@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+  background-color: white;  
+}
+
+.container{
+	 display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
+  	margin-right: 5%;
+}
+.styleCard{
+	width: 600px;
+	height: 400px;
+	margin: 10px;
+}
+
+
+
