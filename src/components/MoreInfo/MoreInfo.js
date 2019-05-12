@@ -106,7 +106,7 @@ class MoreInfo extends React.Component{
 		if(this.props.isLoggedIn){
 			return (
 				<div>
-					<div style={{height: '520px', marginTop: '10px'}}
+					<div style={{minHeight: '520px', marginTop: '10px'}}
 					className= 'tc bg-washed-green shadow-4 br2 pa3 ba dark-gray b--black-10 mv4 w-100 w-100-m w-100-l mw6 center'>
 						<img src={this.state.singleCamp.image} alt='camp' style={{width: '100%' ,height: '250px'}} />
 						<h1>{this.state.singleCamp.camps_name}</h1>

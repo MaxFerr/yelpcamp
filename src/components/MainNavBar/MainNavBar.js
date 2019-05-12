@@ -17,7 +17,7 @@ const MainNavBar=({btnList,onBtnPress,searchChange})=>{
 			{btnLoop}
 			<div style={{display:'inline'}} >
 				<input id='mainSearch' placeholder='Search' 
-				className='ml3 mb2 input-reset ba b--green bg-white hover-bg-light-green hover-black w-35'
+				className='ml3 mb2 input-reset ba b--green bg-white hover-bg-light-green hover-black'
 				style={{padding:'6px', paddingTop:'5px',paddingBottom:'7px'}}
 				onChange={searchChange}
 				/>
