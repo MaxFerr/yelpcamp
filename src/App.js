@@ -18,8 +18,8 @@ import ForgotPass from './components/ForgotPass/ForgotPass.js';
 import ResetPassword from './components/ResetPassword/ResetPassword.js';
 
 class App extends Component {
-	constructor(){
-		super();
+	constructor(props){
+		super(props);
 		this.state={
 			camps:[],
 			btnName:["Home","Shop","Cart"],
@@ -203,14 +203,13 @@ class App extends Component {
 	render() {
 		const filteredInfo = this.state.camps.filter(data => {
         return data.camps_name.toLowerCase().indexOf(this.state.searchfield.toLowerCase()) !==-1
-        });
-        
-		return (
+        });        
+      	return (
 			<div className="App">
 				<TopNavBar onClickLogout={this.onClickLogout} isLoggedIn={this.state.isLoggedIn} user={this.state.user} onBtnPressAdd={this.onBtnPressAdd} />
 				<Title onBtnPressAdd={this.onBtnPressAdd}/>				
 				<div style={{position: this.state.scrolling ? 'fixed' : 'relative', top: 0, width: '100%', zIndex: 1,backgroundColor:'#F1E4E4',marginTop:'-10px'}}>
-					<MainNavBar onBtnPress={this.onBtnPress} btnList={this.state.btnName} searchChange={this.searchChange} />
+					<MainNavBar path={this.props.location.pathname} onBtnPress={this.onBtnPress} btnList={this.state.btnName} searchChange={this.searchChange} />
 				</div>
 					<Route path="/" exact render={(props)=><CampList isAdminIn={this.state.isAdminIn}  onBtnPressInfo={this.onBtnPressInfo} campsData={filteredInfo} onDeleteCamp={this.onDeleteCamp} />}/>
 					<Route path="/Home" exact render={(props)=><CampList isAdminIn={this.state.isAdminIn}  onBtnPressInfo={this.onBtnPressInfo} campsData={filteredInfo} onDeleteCamp={this.onDeleteCamp} />}/>

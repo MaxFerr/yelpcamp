@@ -7,7 +7,7 @@ const CampCard= ({name,location,joined,image,onBtnPressInfo,id,isAdminIn,onDelet
 	
 		if(isAdminIn){
 			return (
-			<div style={{width: '400px' ,height: '550px', margin: '10px'}}
+			<div style={{maxWidth: '400px' ,minHeight: '550px', margin: '10px'}}
 		className= 'tc bg-washed-green shadow-4 br2 pa3 ba dark-gray b--black-10 mv4 w-100 w-75-m w-45-l mw6 center'>
 			<img src={image} alt='camp' style={{width: '350px' ,height: '250px'}} />
 			<h1>{name}</h1>
@@ -28,7 +28,7 @@ const CampCard= ({name,location,joined,image,onBtnPressInfo,id,isAdminIn,onDelet
 		)
 			}else{ 
 				return (
-				<div style={{width: '375px' ,height: '500px', margin: '10px'}}
+				<div style={{maxWidth: '400px' ,minHeight: '400px', margin: '10px'}}
 		className= 'tc bg-washed-green shadow-4 br2 pa3 ba dark-gray b--black-10 mv4 w-100 w-75-m w-45-l mw6 center'>
 			<img src={image} alt='camp' style={{width: '350px' ,height: '250px'}} />
 			<h1>{name}</h1>

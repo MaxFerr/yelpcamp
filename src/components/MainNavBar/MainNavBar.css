@@ -1,0 +1,33 @@
+
+.navigation {	
+  list-style: none;
+   display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  
+}
+
+.navigation a,.test {
+  text-decoration: none;
+  display: block; 
+  color: black;
+}
+
+
+@media all and (max-width: 800px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;    
+  }
+  
+  .navigation a,.test  { 
+    text-align: center;    
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  } 
+  
+}

@@ -17,7 +17,7 @@ const CartList= ({cart,onDeleteItem}) => {
 	})
 
 	return (		
-		<div className='container' >
+		<div className='container' style={{minHeight:'200px'}} >
 			{cardLoopCart}
 		</div>
 		);
