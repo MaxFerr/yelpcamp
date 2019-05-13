@@ -90,7 +90,7 @@ render(){
 		return <Redirect to='/Home' />
 	}else{
 			return (
-			<div style={{width: '400px' ,height: '460px'}}
+			<div style={{maxWidth: '400px' ,height: '460px'}}
 			className= 'tc bg-washed-green shadow-4 br2 pa3 ba dark-gray b--black-10 mv4 w-100 w-75-m w-45-l mw6 center'>
 				<main className="pa4 black-80">
 				<div className="measure center">

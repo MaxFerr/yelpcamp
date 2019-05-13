@@ -1,4 +1,14 @@
-#mapStyle {
-	width:100px;
-	height:225px;
+#mapStyle1{
+	max-width : 510px;
+    height : 200px;
+    display : block;
+}
+
+
+@media all and (max-width: 600px) {
+  #mapStyle1{
+	max-width : 400px;
+    height : 200px;
+    display : block;
+	}
 }

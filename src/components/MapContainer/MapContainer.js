@@ -27,16 +27,17 @@ export class MapContainer extends Component {
   }
 
   componentDidUpdate(){    
-    const testdiv=document.getElementsByTagName("div")[16]
-    testdiv.style.width = "300px";
+    const testdiv=document.getElementsByTagName("div")[16]    
+    testdiv.id='mapStyle1'    
     testdiv.style.height = "200px";
     testdiv.style.display = "block";
+    console.log(document.getElementById('mapStyle1'))
   }
   render() {
     return (
-      <div style={{width:'510px',height: '200px'}}>
+      <div style={{width:'90%',height: '200px'}}>
       <Map google={this.props.google}
-          style={{width:'510px',height: '200px'}}
+          style={{width:'100%',height: '200px'}}
           center={{
             lat: Number(this.state.lat),
             lng: Number(this.state.lng)

@@ -122,9 +122,9 @@ class App extends Component {
 		this.setState({route:route});
 		const btnList=document.getElementsByClassName('mainnavbtn');
 		for (var i = 0; i < btnList.length; i++) {
-			btnList[i].classList.value="f6  unstyled-button pointer w4 dim  ph3 pv2 mb2 dib white bg-green underline-hover mainnavbtn"
+			btnList[i].classList.value="f6  unstyled-button pointer w4 dim   mb2 dib white bg-green underline-hover mainnavbtn"
 		}
-		btnList[index].classList.value="f6  unstyled-button pointer w4 dim ph3 pv2 mb2 dib white underline mainnavbtn";
+		btnList[index].classList.value="f6  unstyled-button pointer w4 dim  mb2 dib white underline mainnavbtn";
 		this.setState({searchfield:''});
 		const mainSearch=document.getElementById('mainSearch');
 		mainSearch.value='';
