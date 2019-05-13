@@ -30,8 +30,7 @@ export class MapContainer extends Component {
     const testdiv=document.getElementsByTagName("div")[16]    
     testdiv.id='mapStyle1'    
     testdiv.style.height = "200px";
-    testdiv.style.display = "block";
-    console.log(document.getElementById('mapStyle1'))
+    testdiv.style.display = "block";    
   }
   render() {
     return (
@@ -57,9 +56,3 @@ export class MapContainer extends Component {
 export default GoogleApiWrapper({
   apiKey: ('AIzaSyDnK5KE2R0T2BLQSV2BNI5E5z_EOIWfVVo')
 })(MapContainer)
-//AIzaSyDnK5KE2R0T2BLQSV2BNI5E5z_EOIWfVVo
-//AIzaSyDnZHCNVuYH8lZSMZtuHzJ4677eUi6AE8w
-//AIzaSyAXHuJtm6ED1mGfDTFTsrecedW4-e2PVxU ok
-
-//AIzaSyDIJ9XX2ZvRKCJcFRrl-lRanEtFUow4piM
-//AIzaSyDIJ9XX2ZvRKCJcFRrl-lRanEtFUow4piM
