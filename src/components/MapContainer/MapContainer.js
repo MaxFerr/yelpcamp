@@ -26,9 +26,15 @@ export class MapContainer extends Component {
       })    
   }
 
-  
+  componentDidUpdate(){    
+    const testdiv=document.getElementsByTagName("div")[16]
+    testdiv.style.width = "300px";
+    testdiv.style.height = "200px";
+    testdiv.style.display = "block";
+  }
   render() {
     return (
+      <div style={{width:'510px',height: '200px'}}>
       <Map google={this.props.google}
           style={{width:'510px',height: '200px'}}
           center={{
@@ -40,9 +46,9 @@ export class MapContainer extends Component {
  
         <Marker title={this.props.camps_name}
           name={this.props.camps_name}
-          position={{lat: Number(this.state.lat), lng:Number(this.state.lng)}}/> 
-        
+          position={{lat: Number(this.state.lat), lng:Number(this.state.lng)}}/>    
       </Map>
+      </div>
     );
   }
 }

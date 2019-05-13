@@ -33,7 +33,7 @@ class MoreInfo extends React.Component{
 		})
 		.then(data=>{			
 			this.setState({updatedComment:data})				
-		})	
+		})			
 
 	}
 
@@ -90,8 +90,9 @@ class MoreInfo extends React.Component{
 			}
 		}
 	}
-
-	render(){			
+	
+	render(){		
+				
 		function displayDIV() {			
 			var x = document.getElementById("myDIV");
 			var y = document.getElementById("secondDiv");
@@ -106,7 +107,7 @@ class MoreInfo extends React.Component{
 		if(this.props.isLoggedIn){
 			return (
 				<div style={{minHeight: '600px'}}>
-					<div style={{minHeight: '1000px', marginTop: '10px'}}
+					<div style={{minHeight: '520px', marginTop: '10px'}}
 					className= 'tc bg-washed-green shadow-4 br2 pa3 ba dark-gray b--black-10 mv4 w-100 w-100-m w-100-l mw6 center'>
 						<img src={this.state.singleCamp.image} alt='camp' style={{width: '100%' ,height: '250px'}} />
 						<h1>{this.state.singleCamp.camps_name}</h1>
@@ -160,8 +161,8 @@ class MoreInfo extends React.Component{
 						<p><em>{this.state.singleCamp.price}$/night</em></p>
 						<p>Camp added : <Moment format="D MMM YYYY" withTitle>{this.state.singleCamp.added}</Moment></p>
 					</div>					
-						<div id='test'>
-							<MapContainer id='test2' camps_name={this.state.name}/>
+						<div style={{width:'30%',height:'225px'}}>
+							<MapContainer  camps_name={this.state.name}/>
 						</div>
 						
 					<div style={{marginTop: '10px'}}
